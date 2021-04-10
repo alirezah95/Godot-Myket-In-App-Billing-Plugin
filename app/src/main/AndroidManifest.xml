@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ah.godot.myketinappbilling">
+
+    <uses-permission android:name="ir.mservices.market.BILLING" />
+
+    <application>
+        <meta-data
+            android:name = "org.godotengine.plugin.v1.MyketInAppBilling"
+            android:value = "ah.godot.myketinappbilling.MyketInAppBillingPlugin" />
+    </application>
+</manifest>

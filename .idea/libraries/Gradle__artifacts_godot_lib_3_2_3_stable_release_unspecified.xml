@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:godot-lib.3.2.3.stable.release:unspecified">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/godot-lib.3.2.3.stable.release/build/.transforms/0894f96cd22b9b3ec9168a14713bbf63/jetified-godot-lib.3.2.3.stable.release/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/godot-lib.3.2.3.stable.release/build/.transforms/0894f96cd22b9b3ec9168a14713bbf63/jetified-godot-lib.3.2.3.stable.release/res" />
+      <root url="file://$PROJECT_DIR$/godot-lib.3.2.3.stable.release/build/.transforms/0894f96cd22b9b3ec9168a14713bbf63/jetified-godot-lib.3.2.3.stable.release/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
