@@ -1,6 +1,5 @@
 package ah.godot.myketinappbilling;
 
-import android.os.Looper;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
@@ -10,7 +9,6 @@ import org.godotengine.godot.Godot;
 import org.godotengine.godot.plugin.GodotPlugin;
 import org.godotengine.godot.plugin.SignalInfo;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -21,7 +19,7 @@ import ah.godot.myketinappbilling.util.IabResult;
 import ah.godot.myketinappbilling.util.Inventory;
 import ah.godot.myketinappbilling.util.Purchase;
 import ah.godot.myketinappbilling.util.SkuDetails;
-import cn.pedant.SweetAlert.SweetAlertDialog;
+
 
 public class MyketInAppBillingPlugin extends GodotPlugin {
     /*
