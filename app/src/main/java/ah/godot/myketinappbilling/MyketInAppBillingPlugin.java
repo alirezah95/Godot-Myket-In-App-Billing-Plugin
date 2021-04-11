@@ -36,8 +36,6 @@ public class MyketInAppBillingPlugin extends GodotPlugin {
     private Godot mGodot;
     private IabHelper mHelper;
     private Inventory mInventory = null;
-    private SweetAlertDialog mInfoDialog;
-    private SweetAlertDialog mErrorDialog;
     private boolean mHelperSetupFinished = false;
     private boolean mIsStoreInstalled = false;
     /*
@@ -126,16 +124,8 @@ public class MyketInAppBillingPlugin extends GodotPlugin {
         super(godot);
         mGodot = godot;
 
-        // Setting up dialogs
-        mInfoDialog = new SweetAlertDialog(mGodot, SweetAlertDialog.PROGRESS_TYPE);
-        mInfoDialog.setCancelable(false);
-
-        mErrorDialog = new SweetAlertDialog(mGodot, SweetAlertDialog.ERROR_TYPE);
-        mErrorDialog.setCancelable(true);
-
         return;
     }
-
 
     @NonNull
     @Override
@@ -143,14 +133,12 @@ public class MyketInAppBillingPlugin extends GodotPlugin {
         return "MyketInAppBilling";
     }
 
-
     @NonNull
     @Override
     public List<String> getPluginMethods() {
         return Arrays.asList("startConnection", "endConnection", "querySkuDetails",
                 "setApplicationKey", "purchase", "queryPurchases");
     }
-
 
     @NonNull
     @Override
@@ -251,5 +239,4 @@ public class MyketInAppBillingPlugin extends GodotPlugin {
 
         return result;
     }
-
 }
