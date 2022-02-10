@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GodotMarketInAppBilling.iml" filepath="$PROJECT_DIR$/.idea/modules/GodotMarketInAppBilling.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GodotMarketInAppBilling.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GodotMarketInAppBilling.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/godot-lib.3.2.3.stable.release/GodotMarketInAppBilling.godot-lib.3.2.3.stable.release.iml" filepath="$PROJECT_DIR$/.idea/modules/godot-lib.3.2.3.stable.release/GodotMarketInAppBilling.godot-lib.3.2.3.stable.release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GodotMyketInAppBilling.iml" filepath="$PROJECT_DIR$/.idea/modules/GodotMyketInAppBilling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GodotMyketInAppBilling.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GodotMyketInAppBilling.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/godot-lib.3.2.3.stable.release/GodotMyketInAppBilling.godot-lib.3.2.3.stable.release.iml" filepath="$PROJECT_DIR$/.idea/modules/godot-lib.3.2.3.stable.release/GodotMyketInAppBilling.godot-lib.3.2.3.stable.release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/godot-stable-release-lib/GodotMyketInAppBilling.godot-stable-release-lib.iml" filepath="$PROJECT_DIR$/.idea/modules/godot-stable-release-lib/GodotMyketInAppBilling.godot-stable-release-lib.iml" />
     </modules>
   </component>
 </project>

@@ -46,7 +46,7 @@ public class MyketInAppBillingPlugin extends GodotPlugin {
                     mHelperSetupFinished = true;
                     mIsStoreInstalled = result.isSuccess();
                     try {
-                        emitSignal(cConnected, mIsStoreInstalled);
+                        emitSignal(cConnected, mIsStoreInstalled, result.getMessage());
                     } catch (Exception e) {
                         Log.d(cTAG, "Emit: " + e.getMessage());
                     }
@@ -142,7 +142,7 @@ public class MyketInAppBillingPlugin extends GodotPlugin {
     @Override
     public Set<SignalInfo> getPluginSignals() {
         Set<SignalInfo> signals = new HashSet<>();
-        signals.add(new SignalInfo(cConnected, Boolean.class));
+        signals.add(new SignalInfo(cConnected, Boolean.class, String.class));
         signals.add(new SignalInfo(cDisconnected));
         signals.add(new SignalInfo(cQueryFinished, Object[].class));
         signals.add(new SignalInfo(cPurchaseFinished, Dictionary.class));
@@ -163,7 +163,7 @@ public class MyketInAppBillingPlugin extends GodotPlugin {
             return 1;
         }
 
-        mHelper = new IabHelper(mGodot, mBase64Key);
+        mHelper = new IabHelper(mGodot.getContext(), mBase64Key);
         try {
             mHelper.startSetup(mSetupFinishedListener);
         } catch (Exception e) {
@@ -230,7 +230,7 @@ public class MyketInAppBillingPlugin extends GodotPlugin {
 //            return result;
 //        }
 
-        mHelper.launchPurchaseFlow(mGodot, productId, 1,
+        mHelper.launchPurchaseFlow(mGodot.getActivity(), productId, 1,
                 mPurchaseFinished);
 
         result.put("status", 0);
